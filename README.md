@@ -1,5 +1,5 @@
 # WeSplit
-# WeSplit
+
 
 WeSplit is a simple iOS app built with SwiftUI that helps users split a bill between multiple people while adding a tip percentage.
 
