@@ -8,6 +8,8 @@
 
 /* Begin PBXFileReference section */
 		0B1686F12FB5E7D800B80EE5 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B168700FFFFFFFF00B80EE5 /* WeSplitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeSplitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B168701FFFFFFFF00B80EE5 /* BillCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +35,7 @@
 			isa = PBXGroup;
 			children = (
 				0B1686F32FB5E7D800B80EE5 /* WeSplit */,
+				0B168702FFFFFFFF00B80EE5 /* WeSplitTests */,
 				0B1686F22FB5E7D800B80EE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +44,17 @@
 			isa = PBXGroup;
 			children = (
 				0B1686F12FB5E7D800B80EE5 /* WeSplit.app */,
+				0B168700FFFFFFFF00B80EE5 /* WeSplitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0B168702FFFFFFFF00B80EE5 /* WeSplitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B168701FFFFFFFF00B80EE5 /* BillCalculatorTests.swift */,
+			);
+			path = WeSplitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +84,39 @@
 		};
 /* End PBXNativeTarget section */
 
+/* Begin PBXSourcesBuildPhase section (Tests) */
+		0B168707FFFFFFFF00B80EE5 /* Sources (Tests) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B168708FFFFFFFF00B80EE5 /* BillCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section (Tests) */
+
+/* Begin PBXBuildFile section */
+		0B168708FFFFFFFF00B80EE5 /* BillCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B168701FFFFFFFF00B80EE5 /* BillCalculatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXNativeTarget section (Tests) */
+		0B168703FFFFFFFF00B80EE5 /* WeSplitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B168706FFFFFFFF00B80EE5 /* Build configuration list for PBXNativeTarget "WeSplitTests" */;
+			buildPhases = (
+				0B168707FFFFFFFF00B80EE5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeSplitTests;
+			productName = WeSplitTests;
+			productReference = 0B168700FFFFFFFF00B80EE5 /* WeSplitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section (Tests) */
+
 /* Begin PBXProject section */
 		0B1686E92FB5E7D800B80EE5 /* Project object */ = {
 			isa = PBXProject;
@@ -100,6 +145,7 @@
 			projectRoot = "";
 			targets = (
 				0B1686F02FB5E7D800B80EE5 /* WeSplit */,
+				0B168703FFFFFFFF00B80EE5 /* WeSplitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +356,40 @@
 			};
 			name = Release;
 		};
+		0B168704FFFFFFFF00B80EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V3BB9YS6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rodrigo.WeSplitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeSplit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeSplit";
+			};
+			name = Debug;
+		};
+		0B168705FFFFFFFF00B80EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V3BB9YS6N2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rodrigo.WeSplitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeSplit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeSplit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +407,15 @@
 			buildConfigurations = (
 				0B1686FD2FB5E7DB00B80EE5 /* Debug */,
 				0B1686FE2FB5E7DB00B80EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B168706FFFFFFFF00B80EE5 /* Build configuration list for PBXNativeTarget "WeSplitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B168704FFFFFFFF00B80EE5 /* Debug */,
+				0B168705FFFFFFFF00B80EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
